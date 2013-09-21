@@ -1,9 +1,9 @@
-#<< utils
-#<< local_storage
-#<< todo_use_case
-#<< todo_gui
-#<< routing_adapter
-#<< web_glue
+#import "utils.coffee"
+#import "local_storage.coffee"
+#import "todo_use_case.coffee"
+#import "todo_gui.coffee"
+#import "routing_adapter.coffee"
+#import "web_glue.coffee"
 
 class WebTodoApp
   constructor: ->
