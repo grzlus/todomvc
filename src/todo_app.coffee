@@ -18,6 +18,5 @@ class WebTodoApp
     useCase.start()
     routingAdapter.start()
 
-
 new WebTodoApp()
 
