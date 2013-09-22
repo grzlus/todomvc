@@ -1,4 +1,4 @@
-class WebGlue
+class @WebGlue
   constructor: (@useCase, @todoListView, @statsView, @storage, @routingAdapter)->
     @todoListViewGlue()
     @statsViewGlue()

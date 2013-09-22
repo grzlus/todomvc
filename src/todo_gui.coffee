@@ -1,4 +1,4 @@
-class TodoListView
+class @TodoListView
   constructor: ->
     $("#new-todo").keypress((event) => @keyPressed(event))
     $("#toggle-all").click( => @completeAllTasksClicked())
@@ -79,7 +79,7 @@ class TodoListView
   enterKeyPressed: (content) =>
 
 
-class StatsView
+class @StatsView
   showStats: (remaining, completed) =>
     source = $("#stats-template").html()
     template = Handlebars.compile(source)

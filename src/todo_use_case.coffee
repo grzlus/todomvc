@@ -1,4 +1,4 @@
-class CompleteTasksUseCase
+class @CompleteTasksUseCase
   constructor: ->
     @todoTasks = []
 
@@ -43,7 +43,7 @@ class CompleteTasksUseCase
   clearCompleted: =>
     @completedTasks().each (task) => @deleteTask(task)
 
-class Task
+class @Task
   constructor: (@content, @completed=false) ->
 
   complete: =>

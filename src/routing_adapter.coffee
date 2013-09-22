@@ -1,4 +1,4 @@
-class RoutingAdapter
+class @RoutingAdapter
   constructor: ->
     routes =
       '/': => @showAll()

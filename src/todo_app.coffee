@@ -1,11 +1,11 @@
-#import "utils.coffee"
-#import "local_storage.coffee"
-#import "todo_use_case.coffee"
-#import "todo_gui.coffee"
-#import "routing_adapter.coffee"
-#import "web_glue.coffee"
+#=require utils
+#=require local_storage
+#=require todo_use_case
+#=require todo_gui
+#=require routing_adapter
+#=require web_glue
 
-class WebTodoApp
+class @WebTodoApp
   constructor: ->
     useCase = new CompleteTasksUseCase()
     useCase.start()

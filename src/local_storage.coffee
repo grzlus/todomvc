@@ -1,4 +1,4 @@
-class LocalStorage
+class @LocalStorage
   constructor: (@namespace) ->
 
   set: (key, value) =>

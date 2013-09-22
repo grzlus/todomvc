@@ -1,12 +1,13 @@
 MAIN=src/todo_app.coffee
+SRC_DIR=src
 RELEASE_DIR=release
 RELEASE_MAIN="$(RELEASE_DIR)/todo_app.js"
 
 debug:
-	cpp $(MAIN) | coffee -s -p > $(RELEASE_MAIN)
+	sprockets $(MAIN) -I $(SRC_DIR) -o $(RELEASE_DIR)
 
 release:
-	cpp $(MAIN) | coffee -s -p | uglifyjs > $(RELEASE_MAIN)
+	sprockets $(MAIN) -I $(SRC_DIR) -o $(RELEASE_DIR) --js-compressor=uglifier
 
 clean:
 	rm -f $(RELEASE_DIR)/*
